@@ -1,10 +1,13 @@
+# generate_data.py
 import pandas as pd
 import numpy as np
 from faker import Faker
 import random
+import os
 
 # Initialize Faker for generating fake data
 fake = Faker()
+
 
 def generate_transactions(num_transactions=10000, fraud_probability=0.01):
     merchant_categories = ['Groceries', 'Electronics', 'Clothing', 'Health', 'Travel', 'Entertainment']
@@ -57,3 +60,22 @@ def generate_transactions(num_transactions=10000, fraud_probability=0.01):
         })
 
     return pd.DataFrame(transactions)
+
+
+if __name__ == "__main__":
+    # Create data directory if it doesn't exist
+    os.makedirs("data", exist_ok=True)
+
+    # Generate main training dataset
+    print("Generating training data...")
+    df = generate_transactions(num_transactions=10000, fraud_probability=0.01)
+    training_file = os.path.join("data", "transactions.csv")
+    df.to_csv(training_file, index=False)
+    print(f"Generated {len(df)} transactions and saved to {training_file}")
+
+    # Generate a small test dataset
+    print("\nGenerating test data...")
+    test_df = generate_transactions(num_transactions=100, fraud_probability=0.05)
+    test_file = os.path.join("data", "test_transactions.csv")
+    test_df.to_csv(test_file, index=False)
+    print(f"Generated {len(test_df)} test transactions and saved to {test_file}")

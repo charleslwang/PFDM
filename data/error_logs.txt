@@ -1,0 +1,16 @@
+2024-11-07 19:33:58.908179: Error processing file: Failed to load model: Can't get attribute '_RemainderColsList' on <module 'sklearn.compose._column_transformer' from '/Users/charleslwang/anaconda3/lib/python3.11/site-packages/sklearn/compose/_column_transformer.py'>
+2024-11-07 23:02:23.386080: Error processing file: Failed to load model: Can't get attribute '_RemainderColsList' on <module 'sklearn.compose._column_transformer' from '/Users/charleslwang/anaconda3/lib/python3.11/site-packages/sklearn/compose/_column_transformer.py'>
+2024-11-07 23:03:55.067249: Error processing file: Failed to load model even with compatibility mode: No module named 'xgboost'
+You may need to retrain the model with your current scikit-learn version.
+2024-11-07 23:05:22.819942: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:05:55.925317: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:08:37.735073: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:08:40.479286: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:08:41.481506: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:08:41.699809: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:08:41.907496: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:08:42.049037: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:08:42.214403: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:09:40.656277: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:09:42.211567: Error processing file: Missing required packages. Please install them as indicated above.
+2024-11-07 23:12:13.265047: Error processing file: Missing required packages. Please install them as indicated above.
